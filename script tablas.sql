@@ -69,6 +69,7 @@ NombreUsuario varchar(30),
 NickUsuario varchar(30),
 ContraseniaUsuario varchar(10),
 IdRol int,
+EstadoUsuario bit,
 constraint fk_IdRol foreign key(IdRol) references Roles(IdRol)
 );
 
