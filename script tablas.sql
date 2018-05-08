@@ -50,6 +50,14 @@ CantidadMayoreo int
 
 go
 
+create table Proveedores(
+IdProveedores int primary key not null identity,
+NombreProveedor varchar(40),
+Direccion varchar(40),
+Telefono int
+);
+go
+
 --creacion de tablas dependientes
 
 create table Compras(
@@ -60,7 +68,6 @@ IdProducto int,
 Costo money,
 constraint fk_IdProducto foreign key(IdProducto) references Productos(IdProducto)
 );
-
 go
 
 create table Usuarios(
